@@ -1,0 +1,212 @@
+/* ===============================
+   General Window & Widgets
+   =============================== */
+QWidget {
+    background-color: #f0f4f8; /* light blue-gray background */
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-size: 12pt;
+    color: #2c3e50;
+}
+
+/* ===============================
+   QScrollArea & Input Area
+   =============================== */
+QScrollArea {
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    background-color: #ffffff; /* white panels */
+}
+
+QLineEdit {
+    border: 1px solid #c0c8d4;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #ffffff;
+    selection-background-color: #27ae60; /* green highlight */
+}
+
+QLabel {
+    font-weight: 500;
+    color: #34495e;
+}
+
+/* ===============================
+   QPushButton (input panel buttons)
+   =============================== */
+QPushButton {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #2980b9;
+}
+
+QPushButton:pressed {
+    background-color: #1c5980;
+}
+
+/* ===============================
+   QToolBar & QToolButton
+   =============================== */
+QToolBar {
+    background: #ecf0f1; /* light gray */
+    border-bottom: 1px solid #d0d7de;
+    spacing: 10px;
+    padding: 5px;
+}
+QToolBar QToolButton::menu-indicator { image: none; }
+QMenu {
+        background-color: #f0f0f0;       /* menu background */
+        border: 1px solid #888;          /* menu border */
+        padding: 5px;                     /* padding around menu */
+    }
+    QMenu::item {
+        padding: 5px 20px;                /* space around text */
+        background-color: transparent;    /* default item bg */
+    }
+    QMenu::item:selected {                /* hovered item */
+        background-color: #2980b9;       /* light blue hover */
+        color: black;                     /* text color */
+    }
+    QMenu::separator {
+        height: 1px;
+        background: #aaa;
+        margin: 5px 0;
+    }
+QToolButton {
+    background-color: #2980b9;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-weight: 600;
+}
+
+QToolButton:hover {
+    background-color: #2471a3;
+}
+
+QToolButton:pressed {
+    background-color: #1c3f66;
+}
+
+/* ===============================
+   QTabWidget
+   =============================== */
+QTabWidget::pane {
+    border: 1px solid #d0d7de;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+QTabBar::tab {
+    background: #d0d7de; /* gray for unselected tabs */
+    color: #7393B3;
+    padding: 12px 25px; /* spacing */
+    min-width: 120px;   /* prevent crammed tabs */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: 500;
+    margin-right: 4px;
+}
+
+QTabBar::tab:selected {
+    background: #2980b9; /* selected tab blue */
+    color: #ffffff;
+}
+
+QTabBar::tab:hover {
+    background-color: #ffffff;
+    color:#0096FF /* subtle hover highlight */
+}
+
+/* ===============================
+   QRadioButton
+   =============================== */
+QRadioButton {
+    spacing: 5px;
+}
+
+QRadioButton::indicator {
+    width: 18px;
+    height: 18px;
+}
+
+QRadioButton::indicator:checked {
+    background-color: #5D3FD3; /* green selection */
+    border: 2px solid #5D3FD3;
+    border-radius: 9px;
+}
+
+QRadioButton::indicator:unchecked {
+    background-color: #ffffff;
+    border: 2px solid #c0c8d4;
+    border-radius: 9px;
+}
+
+/* ===============================
+   QStatusBar
+   =============================== */
+QStatusBar {
+    background-color: #A4D5B5; /* light gray */
+    color: #0424AC;
+    border-top: 1px solid #d0d7de;
+    font-weight: 500;
+}
+
+/* ===============================
+   QScrollBar (Vertical & Horizontal)
+   =============================== */
+QScrollBar:vertical, QScrollBar:horizontal {
+    background: #f0f4f8;
+    border-radius: 5px;
+    width: 12px;
+    height: 12px;
+}
+
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+    background: #c0c8d4; /* gray handle */
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical:hover, QScrollBar::handle:horizontal:hover {
+    background: #3498db; /* blue highlight */
+}
+
+QScrollBar::add-line, QScrollBar::sub-line {
+    background: none;
+    border: none;
+}
+
+    QProgressBar {
+        border: 1px solid #aaa;
+        background-color: #A0A0A0 ;
+        border-radius: 5px;
+        text-align: center;
+        color:#FFFFFF
+    }
+    QProgressBar::chunk {
+        background-color: #4A90E2;
+        width: 10px;
+    }
+/* ===============================
+   Welcome / Empty Plot Area
+   =============================== */
+
+QLabel#AppTitle {
+    font-size: 32pt;
+    font-weight: 700;          /* bold */
+    color: #434E78;            /* deep blue-gray */
+    padding-bottom: 6px;
+}
+
+QLabel#AppDescription {
+    font-size: 12pt;           /* smaller text */
+    font-weight: 400;
+    color: #3291B6;            /* muted blue-gray */
+    max-width: 800px;
+}
